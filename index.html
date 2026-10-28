@@ -1,0 +1,698 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MIT-WPU | Student Placement Portal</title>
+    <meta name="description"
+          content="A student placement portal project for exploring job opportunities and registering student profiles.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header" id="home">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand">
+                <span class="brand-icon">M</span>
+                <span>
+                    <strong>Placement Portal</strong>
+                    <small>Student Career Hub</small>
+                </span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#jobs">Explore Jobs</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#register" class="nav-button">Register Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        YOUR CAREER STARTS HERE
+                    </span>
+
+                    <h1>
+                        Turn Your Skills Into
+                        <span class="highlight">Career Opportunities.</span>
+                    </h1>
+
+                    <p>
+                        Explore sample job opportunities, discover
+                        in-demand skills, and take your first step
+                        towards a successful career.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#jobs" class="button button-primary">
+                            Explore Jobs →
+                        </a>
+
+                        <a href="#register" class="button button-outline">
+                            Join the Portal
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="status-dot"></span>
+                        A student project built to explore placement management
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <div>
+                            <span class="muted-label">CAREER DASHBOARD</span>
+                            <h2>Build Your Future</h2>
+                        </div>
+                        <span class="dashboard-icon">✦</span>
+                    </div>
+
+                    <div class="career-item">
+                        <span class="career-icon blue-icon">☁</span>
+                        <div>
+                            <strong>Cloud Computing</strong>
+                            <p>AWS · Linux · Networking</p>
+                        </div>
+                        <span class="career-arrow">↗</span>
+                    </div>
+
+                    <div class="career-item">
+                        <span class="career-icon purple-icon">&lt;/&gt;</span>
+                        <div>
+                            <strong>Web Development</strong>
+                            <p>HTML · CSS · JavaScript</p>
+                        </div>
+                        <span class="career-arrow">↗</span>
+                    </div>
+
+                    <div class="career-message">
+                        <span>✦</span>
+                        Keep learning. Keep building.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Highlights -->
+        <section class="highlights container" aria-label="Portal features">
+            <div class="highlight-item">
+                <span class="highlight-icon">⌕</span>
+                <div>
+                    <strong>Explore Jobs</strong>
+                    <p>Discover sample opportunities</p>
+                </div>
+            </div>
+
+            <div class="highlight-item">
+                <span class="highlight-icon">◇</span>
+                <div>
+                    <strong>Know the Skills</strong>
+                    <p>Understand job requirements</p>
+                </div>
+            </div>
+
+            <div class="highlight-item">
+                <span class="highlight-icon">✓</span>
+                <div>
+                    <strong>Register Profile</strong>
+                    <p>Enter your student details</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs Section -->
+        <section class="section container" id="jobs">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">CAREER OPPORTUNITIES</span>
+                    <h2>Explore Sample Jobs</h2>
+                    <p>
+                        Discover example roles and the skills they require.
+                    </p>
+                </div>
+
+                <span class="sample-badge">DEMO LISTINGS</span>
+            </div>
+
+            <div class="jobs-grid">
+
+                <article class="job-card">
+                    <div class="job-card-top">
+                        <div class="company-icon cloud-logo">☁</div>
+                        <span class="job-type">Cloud</span>
+                    </div>
+
+                    <h3>Cloud Support Associate</h3>
+                    <p class="company-name">Example Cloud Technologies</p>
+
+                    <p class="job-description">
+                        Learn cloud infrastructure, troubleshoot basic
+                        technical issues, and support cloud services.
+                    </p>
+
+                    <div class="skills">
+                        <span>AWS</span>
+                        <span>Linux</span>
+                        <span>Networking</span>
+                    </div>
+
+                    <div class="job-card-bottom">
+                        <span class="role-level">Entry-level example</span>
+                        <button
+                            type="button"
+                            class="button button-primary details-button"
+                            onclick="showJobDetails('Cloud Support Associate')">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="job-card">
+                    <div class="job-card-top">
+                        <div class="company-icon web-logo">&lt;/&gt;</div>
+                        <span class="job-type">Development</span>
+                    </div>
+
+                    <h3>Junior Web Developer</h3>
+                    <p class="company-name">Example Web Solutions</p>
+
+                    <p class="job-description">
+                        Build and maintain web pages using frontend
+                        technologies and good coding practices.
+                    </p>
+
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="job-card-bottom">
+                        <span class="role-level">Entry-level example</span>
+                        <button
+                            type="button"
+                            class="button button-primary details-button"
+                            onclick="showJobDetails('Junior Web Developer')">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="demo-note">
+                These are fictional demonstration listings, not verified
+                vacancies or official MIT-WPU placement offers.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="about-symbol">✦</div>
+                    <span class="about-small">LEARN</span>
+                    <h3>Skills today.<br>Opportunities tomorrow.</h3>
+                    <div class="about-line"></div>
+                    <p>Learn · Prepare · Grow</p>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">ABOUT THE PROJECT</span>
+                    <h2>A Smarter Way to Explore Careers</h2>
+
+                    <p>
+                        The Student Placement Management System is a
+                        college project designed to demonstrate how
+                        students can explore job information and enter
+                        their profiles through a single website.
+                    </p>
+
+                    <div class="about-point">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Job Information</strong>
+                            <p>View example roles and required skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-point">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Student Registration</strong>
+                            <p>Practise entering student profile details.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-point">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Cloud Learning</strong>
+                            <p>Build a foundation for future cloud deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section class="section container" id="register">
+            <div class="registration-grid">
+                <div class="registration-intro">
+                    <span class="eyebrow">GET STARTED</span>
+                    <h2>Create Your Student Profile</h2>
+
+                    <p>
+                        Enter your basic details to try the registration
+                        feature of this student placement portal.
+                    </p>
+
+                    <div class="registration-tip">
+                        <span>✦</span>
+                        <p>
+                            <strong>Begin with your skills.</strong><br>
+                            Highlight what you know and what you are
+                            learning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <div class="form-heading">
+                        <h3>Student Registration</h3>
+                        <p>Fill in the details below.</p>
+                    </div>
+
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select your course</option>
+                                <option value="BCS">BCS</option>
+                                <option value="BTech">B.Tech</option>
+                                <option value="BCA">BCA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">Skills</label>
+                            <textarea
+                                id="skills"
+                                name="skills"
+                                rows="3"
+                                placeholder="e.g. AWS, HTML, Python"></textarea>
+                        </div>
+
+                        <button type="submit" class="button button-primary submit-button">
+                            Register Now →
+                        </button>
+
+                        <p class="form-disclaimer">
+                            Demo only: this form currently displays a
+                            message and does not save your details.
+                            Use sample details while testing.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section container" id="contact">
+            <div class="contact-card">
+                <div>
+                    <span class="eyebrow">NEED HELP?</span>
+                    <h2>Let's Connect</h2>
+                    <p>
+                        This student project demonstrates a simple
+                        contact section for a placement portal.
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <strong>Demo Contact</strong>
+                        <p>placements@example.com</p>
+                        <small>Placeholder email — not an official contact.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="#home" class="footer-brand">Placement Portal</a>
+
+            <p>
+                Student project for learning web development and cloud computing.
+            </p>
+
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                © <span id="currentYear">2026</span>
+                Student Placement Management System
+            </p>
+            <p>Educational demo · Not an official MIT-WPU portal</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+    
+<!-- Eligibility Checker Feature -->
+<section id="eligibility-checker" style="max-width:600px; margin:30px auto; padding:24px; border-radius:12px; background:#f4f7fb; font-family:Arial,sans-serif;">
+
+  <h2>Placement Eligibility Checker</h2>
+  <p>Check whether you meet the placement criteria.</p>
+
+  <label for="company">Select Company:</label>
+  <select id="company" style="display:block; width:100%; padding:10px; margin:8px 0 16px;">
+    <option value="7">Company A — Minimum CGPA 7.0</option>
+    <option value="8">Company B — Minimum CGPA 8.0</option>
+    <option value="6">Company C — Minimum CGPA 6.0</option>
+  </select>
+
+  <label for="cgpa">Your CGPA (out of 10):</label>
+  <input id="cgpa" type="number" min="0" max="10" step="0.1"
+    placeholder="e.g. 7.5"
+    style="display:block; width:95%; padding:10px; margin:8px 0 16px;">
+
+  <label for="backlogs">Current backlogs:</label>
+  <input id="backlogs" type="number" min="0" step="1"
+    placeholder="Enter number of backlogs"
+    style="display:block; width:95%; padding:10px; margin:8px 0 16px;">
+
+  <button type="button" onclick="checkEligibility()"
+    style="padding:12px 20px; background:#2457c5; color:white; border:0; border-radius:6px; cursor:pointer;">
+    Check Eligibility
+  </button>
+
+  <p id="eligibility-result" role="status" aria-live="polite"></p>
+</section>
+
+<script>
+function checkEligibility() {
+  const company = Number(document.getElementById("company").value);
+  const cgpaInput = document.getElementById("cgpa").value;
+  const backlogInput = document.getElementById("backlogs").value;
+  const result = document.getElementById("eligibility-result");
+
+  if (cgpaInput.trim() === "" || backlogInput.trim() === "") {
+    result.textContent = "Please enter your CGPA and number of backlogs.";
+    return;
+  }
+
+  const cgpa = Number(cgpaInput);
+  const backlogs = Number(backlogInput);
+
+  if (!Number.isFinite(cgpa) || cgpa < 0 || cgpa > 10 ||
+      !Number.isInteger(backlogs) || backlogs < 0) {
+    result.textContent = "Enter a valid CGPA (0–10) and a non-negative whole number of backlogs.";
+    return;
+  }
+
+  if (backlogs > 0) {
+    result.textContent = "Not eligible under this example's zero-backlog rule.";
+  } else if (cgpa >= company) {
+    result.textContent = "You meet the example eligibility criteria!";
+  } else {
+    result.textContent = "You do not meet this company's example CGPA requirement.";
+  }
+}
+</script>
+
+<!-- Job Opportunities Feature -->
+<section id="job-opportunities" style="max-width:800px; margin:30px auto; padding:24px; font-family:Arial,sans-serif;">
+  <h2>Job Opportunities</h2>
+  
+<input
+  type="text"
+  id="jobSearch"
+  placeholder="Search jobs by role or company..."
+  oninput="searchJobs()"
+  style="width:95%; padding:12px; margin:12px 0; border:1px solid #ccc; border-radius:6px;"
+>
+
+  <p>Explore placement opportunities for students.</p>
+
+  <div style="border:1px solid #ddd; border-radius:10px; padding:16px; margin:12px 0;">
+    <h3>Cloud Support Associate</h3>
+    <p>Company: Example Cloud Services</p>
+    <p>Minimum CGPA: 7.0</p>
+    <p>Eligible students: BCS / BCA / BTech</p>
+    <p>Deadline: 30 November 2026</p>
+    <button type="button" <button type="button"
+  onclick="document.getElementById('cloud-job-details').hidden = false">
+  View Opportunity
+</button>
+
+<div id="cloud-job-details" hidden>
+  <h4>Cloud Support Associate — Job Details</h4>
+  <p>Role: Entry-level cloud support</p>
+  <p>Skills: Cloud computing, networking, Linux</p>
+  <p>Minimum CGPA: 7.0 (sample requirement)</p>
+  <p>Backlogs: As specified by the employer</p>
+</div>
+  </div>
+
+  <div style="border:1px solid #ddd; border-radius:10px; padding:16px; margin:12px 0;">
+    <h3>Junior Software Developer</h3>
+    <p>Company: Example Software Solutions</p>
+    <p>Minimum CGPA: 7.5</p>
+    <p>Eligible students: BCS / BTech</p>
+    <p>Deadline: 15 December 2026</p>
+    <button type="button" 
+<button type="button"
+  onclick="document.getElementById('developer-job-details').hidden = false">
+  View Opportunity
+</button>
+
+<div id="developer-job-details" hidden>
+  <h4>Junior Software Developer — Job Details</h4>
+  <p><strong>Role:</strong> Entry-level software development</p>
+  <p><strong>Skills:</strong> HTML, CSS, JavaScript, programming fundamentals</p>
+  <p><strong>Minimum CGPA:</strong> 7.5 (sample requirement)</p>
+  <p><strong>Eligible Courses:</strong> BCS / BTech (sample criteria)</p>
+  <p><strong>Backlogs:</strong> As specified by the employer</p>
+  <p><strong>Responsibilities:</strong> Write code, fix bugs, and test applications.</p>
+</div>
+
+    </button>
+  </div>
+</section>
+
+
+</body>
+
+<!-- Student Profile -->
+<section id="student-profile"
+  style="max-width:600px; margin:30px auto; padding:24px; background:#f4f7fb; border-radius:12px; font-family:Arial,sans-serif;">
+
+  <h2>Student Profile</h2>
+  <p>Enter your academic and skill details.</p>
+
+  <form id="profile-form">
+    <label for="student-name">Full Name:</label>
+    <input id="student-name" type="text" required
+      style="display:block; width:95%; padding:10px; margin:8px 0 16px;">
+
+    <label for="student-course">Course:</label>
+    <select id="student-course"
+      style="display:block; width:100%; padding:10px; margin:8px 0 16px;">
+      <option value="BCS">BCS</option>
+      <option value="BCA">BCA</option>
+      <option value="BTech">BTech</option>
+    </select>
+
+    <label for="student-cgpa">CGPA (out of 10):</label>
+    <input id="student-cgpa" type="number" min="0" max="10" step="0.1" required
+      style="display:block; width:95%; padding:10px; margin:8px 0 16px;">
+
+    <label for="student-skills">Skills:</label>
+    <input id="student-skills" type="text"
+      placeholder="e.g. AWS, JavaScript, MongoDB"
+      style="display:block; width:95%; padding:10px; margin:8px 0 16px;">
+
+    <button type="submit"
+      style="padding:12px 20px; background:#2457c5; color:white; border:0; border-radius:6px;">
+      Save Profile
+    </button>
+  </form>
+
+  <p id="profile-message" role="status"></p>
+</section>
+
+<script>
+document.getElementById("profile-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const cgpa = Number(document.getElementById("student-cgpa").value);
+
+  if (cgpa < 0 || cgpa > 10) {
+    document.getElementById("profile-message").textContent =
+      "Please enter a CGPA between 0 and 10.";
+    return;
+  }
+
+  document.getElementById("profile-message").textContent =
+    "Profile details entered successfully! Database saving is not connected yet.";
+});
+</script>
+
+
+<!-- Placement Statistics Dashboard -->
+<section id="placement-statistics"
+  style="max-width:800px; margin:30px auto; padding:24px; font-family:Arial,sans-serif;">
+
+  <h2>Placement Statistics Dashboard</h2>
+
+  <div style="display:flex; flex-wrap:wrap; gap:15px;">
+
+    <div style="flex:1; min-width:150px; padding:20px; background:#e8f0ff; border-radius:10px;">
+      <h3>Job Opportunities</h3>
+      <p id="total-jobs" style="font-size:28px; font-weight:bold;">2</p>
+    </div>
+
+    <div style="flex:1; min-width:150px; padding:20px; background:#e8f8ee; border-radius:10px;">
+      <h3>Career Resources</h3>
+      <p style="font-size:28px; font-weight:bold;">3</p>
+    </div>
+
+    <div style="flex:1; min-width:150px; padding:20px; background:#fff2df; border-radius:10px;">
+      <h3>Application Tracker</h3>
+      <p style="font-size:18px; font-weight:bold;">Available</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Placement Preparation Resources -->
+<section id="placement-resources"
+  style="max-width:800px; margin:30px auto; padding:24px; font-family:Arial,sans-serif;">
+
+  <h2>Placement Preparation Resources</h2>
+  <p>Improve your skills before placement interviews.</p>
+
+  <div style="border:1px solid #ddd; padding:15px; border-radius:8px; margin:12px 0;">
+    <h3>Cloud Computing</h3>
+    <p>Learn cloud fundamentals, AWS, Azure and Google Cloud.</p>
+    <a href="https://cloud.google.com/learn"
+       target="_blank" rel="noopener noreferrer">Explore Cloud Learning</a>
+  </div>
+
+  <div style="border:1px solid #ddd; padding:15px; border-radius:8px; margin:12px 0;">
+    <h3>JavaScript</h3>
+    <p>Practice programming fundamentals and web development.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+       target="_blank" rel="noopener noreferrer">Learn JavaScript</a>
+  </div>
+
+  <div style="border:1px solid #ddd; padding:15px; border-radius:8px; margin:12px 0;">
+    <h3>Interview Preparation</h3>
+    <p>Prepare for technical interviews and coding questions.</p>
+    <a href="https://www.geeksforgeeks.org/"
+       target="_blank" rel="noopener noreferrer">Explore Interview Resources</a>
+  </div>
+
+</section>
+
+
+<!-- Application Tracker -->
+<section id="application-tracker"
+  style="max-width:800px; margin:30px auto; padding:24px; font-family:Arial,sans-serif;">
+
+  <h2>My Application Tracker</h2>
+  <p>Check the status of your job application.</p>
+
+  <label for="application-job">Select Job:</label>
+  <select id="application-job"
+    style="display:block; width:100%; padding:10px; margin:10px 0;">
+    <option value="Cloud Support Associate">Cloud Support Associate</option>
+    <option value="Junior Software Developer">Junior Software Developer</option>
+  </select>
+
+  <button type="button" onclick="checkApplicationStatus()"
+    style="padding:12px 20px; background:#2457c5; color:white; border:0; border-radius:6px; cursor:pointer;">
+    Check Status
+  </button>
+
+  <p id="application-status" role="status" aria-live="polite"></p>
+</section>
+
+<script>
+function checkApplicationStatus() {
+  const job = document.getElementById("application-job").value;
+
+  document.getElementById("application-status").textContent =
+    "Demo status for " + job + ": Application status is Pending.";
+}
+</script>
+
+
+<script>
+function searchJobs() {
+  const searchText = document.getElementById("jobSearch").value.toLowerCase();
+
+  const jobCards = document.querySelectorAll("#job-opportunities > div");
+
+  jobCards.forEach(function(card) {
+    const jobText = card.textContent.toLowerCase();
+
+    if (jobText.includes(searchText)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
+</html>
